@@ -1,0 +1,38 @@
+# php -- BEGIN cPanel-generated handler, do not edit
+# Ensure PHP is executed by cPanel EasyApache / LiteSpeed
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+  AddHandler application/x-httpd-ea-php82 .php .php8 .phtml
+  AddHandler application/x-httpd-php .php .phtml .php8
+  AddType application/x-httpd-php .php .phtml .php8
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Pass Authorization Header for APIs and OCPI
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # 1. Forward WebSockets to PM2 on port 3000 for OCPP Chargers
+    RewriteCond %{HTTP:Upgrade} =websocket [NC]
+    <IfModule mod_proxy_wstunnel.c>
+        RewriteRule ^(.*)$ ws://127.0.0.1:3000/$1 [P,L]
+    </IfModule>
+
+    # 2. Forward HTTP traffic to Node / PM2 on port 3000 if mod_proxy is active
+    <IfModule mod_proxy.c>
+        <IfModule mod_proxy_http.c>
+            RewriteCond %{REQUEST_URI} !^/\.well-known
+            RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
+        </IfModule>
+    </IfModule>
+
+    # 3. Fallback to index.php if mod_proxy is not enabled or for PHP handling
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>

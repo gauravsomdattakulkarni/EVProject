@@ -1,0 +1,8 @@
+{
+  "name": "Remix 2 LARAVEL SATMAT EV CSMS + OCPI Working OCPI with minor errors",
+  "description": "SATMAT EV Charging Station Management System (CMS) with real-time OCPP WebSockets, multi-connector charger management, OCPI 2.0/2.2 roaming partner integration, and dynamic costing. on simulator charging stating \n\nLARAVEL SATMAT EV CSMS + OCPI Working OCPI with minor errors",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

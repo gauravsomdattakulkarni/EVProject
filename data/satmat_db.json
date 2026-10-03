@@ -1,0 +1,1131 @@
+{
+  "chargers": [
+    {
+      "id": "satmat",
+      "name": "ev1",
+      "wsUrl": "wss://evcharger.satmatgroup.com/ocpp/satmat",
+      "localWsUrl": "ws://localhost:3000/ocpp/satmat",
+      "location": {
+        "name": "ev1",
+        "address": "",
+        "city": "Pune",
+        "postalCode": "411001",
+        "country": "IND",
+        "latitude": 18.5204,
+        "longitude": 73.8567
+      },
+      "status": "Available",
+      "isConnected": false,
+      "lastHeartbeat": "2026-10-02T04:50:25.903Z",
+      "ocppVersion": "1.6J",
+      "connectors": [
+        {
+          "id": 1,
+          "name": "Connector 1",
+          "type": "CCS2",
+          "powerType": "DC",
+          "maxKw": 60,
+          "voltage": 400,
+          "amperage": 150,
+          "status": "Available",
+          "currentSession": null,
+          "activeTransactionId": null
+        }
+      ],
+      "baseCostPerKwh": 16,
+      "idleFeePerMinute": 1,
+      "sessionBaseFee": 10,
+      "maxPowerKw": 600,
+      "chargePointVendor": "SATMAT",
+      "chargePointModel": "SM-01",
+      "firmwareVersion": "v1.6J",
+      "createdAt": "2026-10-02T04:00:00.000Z",
+      "updatedAt": "2026-10-02T10:41:40.154Z",
+      "activeTransactionId": null
+    }
+  ],
+  "partners": [
+    {
+      "id": "partner-smv-live",
+      "name": "SMV Mobility Roaming eMSP",
+      "partyId": "SMV",
+      "countryCode": "IN",
+      "role": "eMSP",
+      "tokenA": "a1b2c3d4-token-a-satmat-2026",
+      "tokenB": "b2c3d4e5-token-b-satmat-2026",
+      "partnerToken": "HUB-SATMAT-KEY-88220199",
+      "url": "https://evcharger.satmatgroup.com/ocpi/2.2.1",
+      "ocpiVersion": "2.2",
+      "status": "ACTIVE",
+      "pricingType": "DEFAULT",
+      "customCostPerKwh": null,
+      "priceAdjustmentPercent": 0,
+      "notes": "Official SMV Mobility eMSP Partner (Pre-configured Live Credentials)",
+      "createdAt": "2026-10-02T10:20:20.896Z",
+      "lastAccessAt": "2026-10-02T10:41:50.005Z"
+    },
+    {
+      "id": "partner-satmat-msp",
+      "name": "SATMAT Roaming eMSP India",
+      "partyId": "SAT",
+      "countryCode": "IN",
+      "role": "eMSP",
+      "tokenA": "a1b2c3d4-token-a-satmat-2026",
+      "tokenB": "b2c3d4e5-token-b-satmat-2026",
+      "partnerToken": "c3d4e5f6-partner-token-2026",
+      "url": "https://evcharger.satmatgroup.com/ocpi/versions",
+      "ocpiVersion": "2.2",
+      "status": "ACTIVE",
+      "pricingType": "DEFAULT",
+      "customCostPerKwh": null,
+      "priceAdjustmentPercent": 0,
+      "notes": "Primary OCPI Roaming Network for SATMAT EV Fleet",
+      "createdAt": "2026-10-02T10:20:20.896Z",
+      "lastAccessAt": null
+    }
+  ],
+  "tariffs": [],
+  "sessions": [
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-SMV-01",
+      "startTime": "2026-10-02T10:41:28.021Z",
+      "endTime": "2026-10-02T10:41:40.153Z",
+      "energyKwh": 0.22,
+      "cost": 13.52,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-SMV-01",
+      "startTime": "2026-10-02T10:20:48.791Z",
+      "endTime": "2026-10-02T10:21:11.330Z",
+      "energyKwh": 0.31,
+      "cost": 14.96,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-APP-01",
+      "startTime": "2026-10-02T08:37:34.434Z",
+      "endTime": "2026-10-02T08:37:34.474Z",
+      "energyKwh": 0.1,
+      "cost": 11.6,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-9694",
+      "transactionId": 9694,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "TEST-RFID-01",
+      "startTime": "2026-10-02T07:02:00.468Z",
+      "endTime": "2026-10-02T07:02:00.483Z",
+      "energyKwh": 0.1,
+      "cost": 11.6,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-APP-01",
+      "startTime": "2026-10-02T05:52:47.478Z",
+      "endTime": "2026-10-02T05:52:52.343Z",
+      "energyKwh": 0.13,
+      "cost": 12.08,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-APP-01",
+      "startTime": "2026-10-02T05:45:37.558Z",
+      "endTime": "2026-10-02T05:45:43.033Z",
+      "energyKwh": 0.16,
+      "cost": 12.56,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2167",
+      "transactionId": 2167,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-APP-01",
+      "startTime": "2026-10-02T05:33:39.641Z",
+      "endTime": "2026-10-02T05:33:48.575Z",
+      "energyKwh": 0.19,
+      "cost": 13.04,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-2001",
+      "transactionId": 2001,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "SATMAT-ADMIN-CARD",
+      "startTime": "2026-10-02T04:50:25.902Z",
+      "endTime": "2026-10-02T04:50:25.931Z",
+      "energyKwh": 0.1,
+      "cost": 11.6,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-4224",
+      "transactionId": 4224,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "RFID-APP-01",
+      "startTime": "2026-10-02T04:45:50.711Z",
+      "endTime": "2026-10-02T04:45:51.431Z",
+      "energyKwh": 1.25,
+      "cost": 30,
+      "status": "Completed"
+    },
+    {
+      "id": "sess-9692",
+      "transactionId": 9692,
+      "machineId": "satmat",
+      "connectorId": 1,
+      "idTag": "SATMAT-ADMIN-CARD",
+      "startTime": "2026-10-02T04:26:55.812Z",
+      "endTime": "2026-10-02T04:27:06.224Z",
+      "energyKwh": 0.19,
+      "cost": 13.04,
+      "status": "Completed"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log-1790937710006-h5in7t",
+      "timestamp": "2026-10-02T10:41:50.006Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2.1/cdrs",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:41:50.006Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T10:41:28.021Z\",\"stop_date_time\":\"2026-10-02T10:41:40.153Z\",\"auth_id\":\"RFID-SMV-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-SMV-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T10:41:28.021Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.22},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":11.46,\"incl_vat\":13.52},\"total_energy\":0.22,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T10:41:40.153Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T10:20:48.791Z\",\"stop_date_time\":\"2026-10-02T10:21:11.330Z\",\"auth_id\":\"RFID-SMV-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-SMV-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T10:20:48.791Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.31},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":12.68,\"incl_vat\":14.96},\"total_energy\":0.31,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T10:21:11.330Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T08:37:34.434Z\",\"stop_date_time\":\"2026-10-02T08:37:34.474Z\",\"auth_id\":\"RFID-APP-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T08:37:34.434Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"total_energy\":0.1,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T08:37:34.474Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-9694\",\"start_date_time\":\"2026-10-02T07:02:00.468Z\",\"stop_date_time\":\"2026-10-02T07:02:00.483Z\",\"auth_id\":\"TEST-RFID-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-9694\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"TEST-RFID-01\",\"type\":\"RFID\",\"contract_id\":\"TEST-RFID-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T07:02:00.468Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"total_energy\":0.1,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T07:02:00.483Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T05:52:47.478Z\",\"stop_date_time\":\"2026-10-02T05:52:52.343Z\",\"auth_id\":\"RFID-APP-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:52:47.478Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.13},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":10.24,\"incl_vat\":12.08},\"total_energy\":0.13,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T05:52:52.343Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T05:45:37.558Z\",\"stop_date_time\":\"2026-10-02T05:45:43.033Z\",\"auth_id\":\"RFID-APP-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:45:37.558Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.16},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":10.64,\"incl_vat\":12.56},\"total_energy\":0.16,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T05:45:43.033Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2167\",\"start_date_time\":\"2026-10-02T05:33:39.641Z\",\"stop_date_time\":\"2026-10-02T05:33:48.575Z\",\"auth_id\":\"RFID-APP-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2167\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:33:39.641Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.19},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":11.05,\"incl_vat\":13.04},\"total_energy\":0.19,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T05:33:48.575Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T04:50:25.902Z\",\"stop_date_time\":\"2026-10-02T04:50:25.931Z\",\"auth_id\":\"SATMAT-ADMIN-CARD\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"SATMAT-ADMIN-CARD\",\"type\":\"RFID\",\"contract_id\":\"SATMAT-ADMIN-CARD\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:50:25.902Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"total_energy\":0.1,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T04:50:25.931Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-4224\",\"start_date_time\":\"2026-10-02T04:45:50.711Z\",\"stop_date_time\":\"2026-10-02T04:45:51.431Z\",\"auth_id\":\"RFID-APP-01\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-4224\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:45:50.711Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":1.25},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":25.42,\"incl_vat\":30},\"total_energy\":1.25,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T04:45:51.431Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-9692\",\"start_date_time\":\"2026-10-02T04:26:55.812Z\",\"stop_date_time\":\"2026-10-02T04:27:06.224Z\",\"auth_id\":\"SATMAT-ADMIN-CARD\",\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-9692\",\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"SATMAT-ADMIN-CARD\",\"type\":\"RFID\",\"contract_id\":\"SATMAT-ADMIN-CARD\"},\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"currency\":\"INR\",\"tariffs\":[],\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:26:55.812Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.19},{\"type\":\"TIME\",\"volume\":0.5}]}],\"total_cost\":{\"excl_vat\":11.05,\"incl_vat\":13.04},\"total_energy\":0.19,\"total_time\":0.5,\"total_parking_time\":0,\"remark\":\"Settled via OCPI 2.2.1 Roaming\",\"last_updated\":\"2026-10-02T04:27:06.224Z\"}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937700156-ydones",
+      "timestamp": "2026-10-02T10:41:40.156Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "POST /ocpi/cpo/2.2.1/commands/STOP_SESSION",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 6,
+      "ip": "127.0.0.1",
+      "payload": {
+        "session_id": "sess-2001",
+        "location_id": "satmat"
+      },
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:41:40.156Z\",\"data\":{\"result\":\"ACCEPTED\",\"timeout\":30,\"message\":[{\"language\":\"en\",\"text\":\"Session sess-2001 stopped successfully\"}]}}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937700155-bp5p97",
+      "timestamp": "2026-10-02T10:41:40.155Z",
+      "type": "SYSTEM",
+      "protocol": "CSMS Core",
+      "direction": "OUT",
+      "action": "StopChargingDirect",
+      "machineId": "satmat",
+      "connectorId": 1,
+      "transactionId": 2001,
+      "status": "Completed",
+      "ip": "127.0.0.1",
+      "payload": {
+        "connectorId": 1,
+        "transactionId": 2001,
+        "socketConnected": false
+      },
+      "rawMessage": "{\"connectorId\":1,\"transactionId\":2001,\"socketConnected\":false}",
+      "details": {}
+    },
+    {
+      "id": "log-1790937700151-w98ocr",
+      "timestamp": "2026-10-02T10:41:40.151Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "IN",
+      "action": "STOP_SESSION",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Received",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "session_id": "sess-2001",
+        "location_id": "satmat"
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"session_id\":\"sess-2001\",\"location_id\":\"satmat\"}",
+      "details": {}
+    },
+    {
+      "id": "log-1790937693239-d94eyl",
+      "timestamp": "2026-10-02T10:41:33.239Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2.1/sessions",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 2,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:41:33.239Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T10:41:28.021Z\",\"end_date_time\":null,\"kwh\":0.16,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-SMV-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T10:41:28.021Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.16},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":10.64,\"incl_vat\":12.56},\"status\":\"ACTIVE\",\"last_updated\":\"2026-10-02T10:41:28.021Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T10:20:48.791Z\",\"end_date_time\":\"2026-10-02T10:21:11.330Z\",\"kwh\":0.31,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-SMV-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T10:20:48.791Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.31},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":12.68,\"incl_vat\":14.96},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T10:21:11.330Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T08:37:34.434Z\",\"end_date_time\":\"2026-10-02T08:37:34.474Z\",\"kwh\":0.1,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T08:37:34.434Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T08:37:34.474Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-9694\",\"start_date_time\":\"2026-10-02T07:02:00.468Z\",\"end_date_time\":\"2026-10-02T07:02:00.483Z\",\"kwh\":0.1,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"TEST-RFID-01\",\"type\":\"RFID\",\"contract_id\":\"TEST-RFID-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-9694\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T07:02:00.468Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T07:02:00.483Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T05:52:47.478Z\",\"end_date_time\":\"2026-10-02T05:52:52.343Z\",\"kwh\":0.13,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:52:47.478Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.13},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":10.24,\"incl_vat\":12.08},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T05:52:52.343Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T05:45:37.558Z\",\"end_date_time\":\"2026-10-02T05:45:43.033Z\",\"kwh\":0.16,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:45:37.558Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.16},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":10.64,\"incl_vat\":12.56},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T05:45:43.033Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2167\",\"start_date_time\":\"2026-10-02T05:33:39.641Z\",\"end_date_time\":\"2026-10-02T05:33:48.575Z\",\"kwh\":0.19,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2167\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T05:33:39.641Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.19},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":11.05,\"incl_vat\":13.04},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T05:33:48.575Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-2001\",\"start_date_time\":\"2026-10-02T04:50:25.902Z\",\"end_date_time\":\"2026-10-02T04:50:25.931Z\",\"kwh\":0.1,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"SATMAT-ADMIN-CARD\",\"type\":\"RFID\",\"contract_id\":\"SATMAT-ADMIN-CARD\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-2001\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:50:25.902Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.1},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":9.83,\"incl_vat\":11.6},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T04:50:25.931Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-4224\",\"start_date_time\":\"2026-10-02T04:45:50.711Z\",\"end_date_time\":\"2026-10-02T04:45:51.431Z\",\"kwh\":1.25,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"RFID-APP-01\",\"type\":\"RFID\",\"contract_id\":\"RFID-APP-01\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-4224\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:45:50.711Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":1.25},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":25.42,\"incl_vat\":30},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T04:45:51.431Z\"},{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"sess-9692\",\"start_date_time\":\"2026-10-02T04:26:55.812Z\",\"end_date_time\":\"2026-10-02T04:27:06.224Z\",\"kwh\":0.19,\"cdr_token\":{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"uid\":\"SATMAT-ADMIN-CARD\",\"type\":\"RFID\",\"contract_id\":\"SATMAT-ADMIN-CARD\"},\"auth_method\":\"COMMAND\",\"authorization_reference\":\"AUTH-9692\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":\"1\",\"meter_id\":\"satmat\",\"currency\":\"INR\",\"charging_periods\":[{\"start_date_time\":\"2026-10-02T04:26:55.812Z\",\"dimensions\":[{\"type\":\"ENERGY\",\"volume\":0.19},{\"type\":\"TIME\",\"volume\":0.25}]}],\"total_cost\":{\"excl_vat\":11.05,\"incl_vat\":13.04},\"status\":\"COMPLETED\",\"last_updated\":\"2026-10-02T04:27:06.224Z\"}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937688023-ghd68c",
+      "timestamp": "2026-10-02T10:41:28.024Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "POST /ocpi/cpo/2.2.1/commands/START_SESSION",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 4,
+      "ip": "127.0.0.1",
+      "payload": {
+        "location_id": "satmat",
+        "connector_id": 1,
+        "token": {
+          "uid": "RFID-SMV-01"
+        }
+      },
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:41:28.023Z\",\"data\":{\"result\":\"ACCEPTED\",\"timeout\":30,\"message\":[{\"language\":\"en\",\"text\":\"Charging session #2001 initiated for location satmat connector #1\"}]}}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937688023-6f700m",
+      "timestamp": "2026-10-02T10:41:28.023Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "IN",
+      "action": "START_SESSION",
+      "machineId": "satmat",
+      "connectorId": 1,
+      "transactionId": 2001,
+      "status": "Received",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "location_id": "satmat",
+        "evse_uid": "satmat-EVSE-1",
+        "connector_id": 1,
+        "token": {
+          "uid": "RFID-SMV-01"
+        }
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":1,\"token\":{\"uid\":\"RFID-SMV-01\"}}",
+      "details": {
+        "transactionId": 2001,
+        "result": "ACCEPTED"
+      }
+    },
+    {
+      "id": "log-1790937681689-6e3hei",
+      "timestamp": "2026-10-02T10:41:21.689Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "POST /ocpi/cpo/2.2.1/tokens/RFID-SMV-01/authorize?type=RFID",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 2,
+      "ip": "127.0.0.1",
+      "payload": {
+        "location_references": [
+          {
+            "location_id": "satmat"
+          }
+        ]
+      },
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Token authorized successfully\",\"timestamp\":\"2026-10-02T10:41:21.689Z\",\"data\":{\"allowed\":\"ALLOWED\",\"token\":{\"country_code\":\"IN\",\"party_id\":\"SMV\",\"uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"contract_id\":\"IN-SMV-RFID-SMV-01\",\"visual_number\":\"RFID-SMV-01\",\"issuer\":\"SMV Mobility Roaming eMSP\",\"group_id\":null,\"valid\":true,\"whitelist\":\"ALLOWED\",\"language\":\"en\",\"last_updated\":\"2026-10-02T10:41:21.689Z\"},\"location\":{\"location_id\":\"satmat\"},\"authorization_reference\":\"AUTH-1790937681688-RFIDSMV01\",\"info\":{\"language\":\"en\",\"text\":\"Token RFID-SMV-01 authorized on SATMAT EV CPO Network\"}}}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Token authorized successfully"
+      }
+    },
+    {
+      "id": "log-1790937681688-dbpmbn",
+      "timestamp": "2026-10-02T10:41:21.688Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "IN",
+      "action": "AuthorizeToken",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Received",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "token_uid": "RFID-SMV-01",
+        "type": "RFID",
+        "location_references": [
+          {
+            "location_id": "satmat"
+          }
+        ]
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"token_uid\":\"RFID-SMV-01\",\"type\":\"RFID\",\"location_references\":[{\"location_id\":\"satmat\"}]}",
+      "details": {}
+    },
+    {
+      "id": "log-1790937671207-4q2zpu",
+      "timestamp": "2026-10-02T10:41:11.207Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2.1/locations",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 3,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:41:11.207Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"satmat\",\"publish\":true,\"publish_allowed_to\":[],\"name\":\"ev1\",\"address\":\"SATMAT Tech Park, Viman Nagar\",\"city\":\"Pune\",\"postal_code\":\"411001\",\"country\":\"IND\",\"coordinates\":{\"latitude\":\"18.5204\",\"longitude\":\"73.8567\"},\"parking_type\":\"ON_STREET\",\"charging_when_closed\":true,\"operator\":{\"name\":\"SATMAT EV\",\"website\":\"https://evcharger.satmatgroup.com\"},\"last_updated\":\"2026-10-02T10:21:11.330Z\",\"evses\":[{\"uid\":\"satmat-EVSE-1\",\"evse_id\":\"IN*SMT*Esatmat*1\",\"status\":\"AVAILABLE\",\"status_schedule\":[],\"capabilities\":[\"REMOTE_START_STOP_CAPABLE\",\"RFID_READER\",\"CHARGING_PROFILE_CAPABLE\",\"RESERVABLE\"],\"connectors\":[{\"id\":\"1\",\"standard\":\"IEC_62196_T2_COMBO\",\"format\":\"CABLE\",\"power_type\":\"DC\",\"max_voltage\":400,\"max_amperage\":150,\"max_electric_power\":60000,\"tariff_ids\":[\"TARIFF-DYN-SMV-satmat\"],\"tariff_id\":\"TARIFF-DYN-SMV-satmat\",\"last_updated\":\"2026-10-02T10:21:11.330Z\"}],\"physical_reference\":\"Bay 1\",\"last_updated\":\"2026-10-02T10:21:11.330Z\"}]}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937671206-xacxlk",
+      "timestamp": "2026-10-02T10:41:11.206Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "DiscoverChargers",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Dispatched",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "count": 1
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"count\":1}",
+      "details": {}
+    },
+    {
+      "id": "log-1790937659715-b85maw",
+      "timestamp": "2026-10-02T10:40:59.715Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "GET /ocpi/2.2.1",
+      "machineId": "External eMSP Partner",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 0,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:40:59.715Z\",\"data\":{\"version\":\"2.2.1\",\"endpoints\":[{\"identifier\":\"credentials\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/credentials\"},{\"identifier\":\"locations\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/locations\"},{\"identifier\":\"tariffs\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/tariffs\"},{\"identifier\":\"tokens\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/tokens\"},{\"identifier\":\"commands\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/commands\"},{\"identifier\":\"sessions\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/sessions\"},{\"identifier\":\"cdrs\",\"role\":\"CPO\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/cpo/2.2.1/cdrs\"}]}}",
+      "details": {
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790937654620-8sgcz5",
+      "timestamp": "2026-10-02T10:40:54.620Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2.1",
+      "direction": "OUT",
+      "action": "GET /ocpi/versions",
+      "machineId": "External eMSP Partner",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 0,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:40:54.620Z\",\"data\":[{\"version\":\"2.2.1\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/2.2.1\"},{\"version\":\"2.2\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/2.2\"},{\"version\":\"2.0\",\"url\":\"https://ais-dev-vhwylednfb7nj6z2eyres4-941910680734.asia-east1.run.app/ocpi/2.0\"}]}",
+      "details": {
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936478461-ikn1f8",
+      "timestamp": "2026-10-02T10:21:18.461Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/locations",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:21:18.461Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"satmat\",\"publish\":true,\"name\":\"ev1\",\"address\":\"SATMAT Tech Park, Viman Nagar\",\"city\":\"Pune\",\"postal_code\":\"411001\",\"country\":\"IND\",\"coordinates\":{\"latitude\":\"18.5204\",\"longitude\":\"73.8567\"},\"parking_type\":\"ON_STREET\",\"charging_when_closed\":true,\"operator\":{\"name\":\"SATMAT EV\",\"website\":\"https://evcharger.satmatgroup.com\"},\"last_updated\":\"2026-10-02T10:21:11.330Z\",\"evses\":[{\"uid\":\"satmat-EVSE-1\",\"evse_id\":\"IN*SMT*Esatmat*1\",\"status\":\"AVAILABLE\",\"status_schedule\":[],\"capabilities\":[\"REMOTE_START_STOP_CAPABLE\",\"RFID_READER\",\"CHARGING_PROFILE_CAPABLE\"],\"connectors\":[{\"id\":\"1\",\"standard\":\"IEC_62196_T2_COMBO\",\"format\":\"CABLE\",\"power_type\":\"DC\",\"max_voltage\":400,\"max_amperage\":150,\"max_electric_power\":60000,\"tariff_ids\":[\"TARIFF-DYN-SMV-satmat\"],\"tariff_id\":\"TARIFF-DYN-SMV-satmat\",\"last_updated\":\"2026-10-02T10:21:11.330Z\"}],\"last_updated\":\"2026-10-02T10:21:11.330Z\"}]}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936478461-id4k8z",
+      "timestamp": "2026-10-02T10:21:18.461Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GetLocations",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Dispatched",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "count": 1
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"count\":1}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936471332-9cr5bg",
+      "timestamp": "2026-10-02T10:21:11.332Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "POST /ocpi/cpo/2.2/commands/STOP_SESSION",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 5,
+      "ip": "127.0.0.1",
+      "payload": {
+        "session_id": "2001",
+        "location_id": "satmat"
+      },
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:21:11.332Z\",\"data\":{\"result\":\"ACCEPTED\",\"timeout\":30,\"message\":[{\"language\":\"en\",\"text\":\"Session sess-2001 stopped successfully\"}]}}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936471331-k7ogt5",
+      "timestamp": "2026-10-02T10:21:11.331Z",
+      "type": "SYSTEM",
+      "protocol": "CSMS Core",
+      "direction": "OUT",
+      "action": "StopChargingDirect",
+      "machineId": "satmat",
+      "connectorId": 1,
+      "transactionId": 2001,
+      "status": "Completed",
+      "ip": "127.0.0.1",
+      "payload": {
+        "connectorId": 1,
+        "transactionId": 2001,
+        "socketConnected": false
+      },
+      "rawMessage": "{\"connectorId\":1,\"transactionId\":2001,\"socketConnected\":false}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936471328-odlnqs",
+      "timestamp": "2026-10-02T10:21:11.328Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "IN",
+      "action": "STOP_SESSION",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Received",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "session_id": "2001",
+        "location_id": "satmat"
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"session_id\":\"2001\",\"location_id\":\"satmat\"}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936462168-ojd893",
+      "timestamp": "2026-10-02T10:21:02.168Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/locations",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:21:02.168Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"satmat\",\"publish\":true,\"name\":\"ev1\",\"address\":\"SATMAT Tech Park, Viman Nagar\",\"city\":\"Pune\",\"postal_code\":\"411001\",\"country\":\"IND\",\"coordinates\":{\"latitude\":\"18.5204\",\"longitude\":\"73.8567\"},\"parking_type\":\"ON_STREET\",\"charging_when_closed\":true,\"operator\":{\"name\":\"SATMAT EV\",\"website\":\"https://evcharger.satmatgroup.com\"},\"last_updated\":\"2026-10-02T10:20:48.791Z\",\"evses\":[{\"uid\":\"satmat-EVSE-1\",\"evse_id\":\"IN*SMT*Esatmat*1\",\"status\":\"CHARGING\",\"status_schedule\":[],\"capabilities\":[\"REMOTE_START_STOP_CAPABLE\",\"RFID_READER\",\"CHARGING_PROFILE_CAPABLE\"],\"connectors\":[{\"id\":\"1\",\"standard\":\"IEC_62196_T2_COMBO\",\"format\":\"CABLE\",\"power_type\":\"DC\",\"max_voltage\":400,\"max_amperage\":150,\"max_electric_power\":60000,\"tariff_ids\":[\"TARIFF-DYN-SMV-satmat\"],\"tariff_id\":\"TARIFF-DYN-SMV-satmat\",\"last_updated\":\"2026-10-02T10:20:48.791Z\"}],\"last_updated\":\"2026-10-02T10:20:48.791Z\"}]}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936462167-q0772o",
+      "timestamp": "2026-10-02T10:21:02.167Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GetLocations",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Dispatched",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "count": 1
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"count\":1}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936448793-p0iuq0",
+      "timestamp": "2026-10-02T10:20:48.793Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "POST /ocpi/cpo/2.2/commands/START_SESSION",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 4,
+      "ip": "127.0.0.1",
+      "payload": {
+        "location_id": "satmat",
+        "connector_id": 1,
+        "token": {
+          "uid": "RFID-SMV-01",
+          "party_id": "SMV",
+          "country_code": "IN"
+        }
+      },
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:48.793Z\",\"data\":{\"result\":\"ACCEPTED\",\"timeout\":30,\"message\":[{\"language\":\"en\",\"text\":\"Charging session #2001 initiated for location satmat connector #1\"}]}}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936448792-yvtb2e",
+      "timestamp": "2026-10-02T10:20:48.792Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "IN",
+      "action": "START_SESSION",
+      "machineId": "satmat",
+      "connectorId": 1,
+      "transactionId": 2001,
+      "status": "Received",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "location_id": "satmat",
+        "evse_uid": "satmat-EVSE-1",
+        "connector_id": 1,
+        "token": {
+          "uid": "RFID-SMV-01",
+          "party_id": "SMV",
+          "country_code": "IN"
+        }
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"location_id\":\"satmat\",\"evse_uid\":\"satmat-EVSE-1\",\"connector_id\":1,\"token\":{\"uid\":\"RFID-SMV-01\",\"party_id\":\"SMV\",\"country_code\":\"IN\"}}",
+      "details": {
+        "transactionId": 2001,
+        "result": "ACCEPTED"
+      }
+    },
+    {
+      "id": "log-1790936444196-ao67hk",
+      "timestamp": "2026-10-02T10:20:44.196Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/tariffs",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:44.196Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"TARIFF-DYN-SMV-satmat\",\"currency\":\"INR\",\"type\":\"REGULAR\",\"elements\":[{\"price_components\":[{\"type\":\"ENERGY\",\"price\":16,\"vat\":18,\"step_size\":1},{\"type\":\"FLAT\",\"price\":10,\"vat\":18,\"step_size\":1},{\"type\":\"TIME\",\"price\":1,\"vat\":18,\"step_size\":60}]}],\"last_updated\":\"2026-10-02T08:37:34.475Z\"}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936440378-q9ci8d",
+      "timestamp": "2026-10-02T10:20:40.378Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /EV_Charging/ocpi/versions",
+      "machineId": "Roaming Partner",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 0,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:40.378Z\",\"data\":[{\"version\":\"2.2.1\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.2.1\"},{\"version\":\"2.2\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.2\"},{\"version\":\"2.0\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.0\"}]}",
+      "details": {
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936435431-ciajj0",
+      "timestamp": "2026-10-02T10:20:35.431Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/locations",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:35.431Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"satmat\",\"publish\":true,\"name\":\"ev1\",\"address\":\"SATMAT Tech Park, Viman Nagar\",\"city\":\"Pune\",\"postal_code\":\"411001\",\"country\":\"IND\",\"coordinates\":{\"latitude\":\"18.5204\",\"longitude\":\"73.8567\"},\"parking_type\":\"ON_STREET\",\"charging_when_closed\":true,\"operator\":{\"name\":\"SATMAT EV\",\"website\":\"https://evcharger.satmatgroup.com\"},\"last_updated\":\"2026-10-02T08:37:34.475Z\",\"evses\":[{\"uid\":\"satmat-EVSE-1\",\"evse_id\":\"IN*SMT*Esatmat*1\",\"status\":\"AVAILABLE\",\"status_schedule\":[],\"capabilities\":[\"REMOTE_START_STOP_CAPABLE\",\"RFID_READER\",\"CHARGING_PROFILE_CAPABLE\"],\"connectors\":[{\"id\":\"1\",\"standard\":\"IEC_62196_T2_COMBO\",\"format\":\"CABLE\",\"power_type\":\"DC\",\"max_voltage\":400,\"max_amperage\":150,\"max_electric_power\":60000,\"tariff_ids\":[\"TARIFF-DYN-SMV-satmat\"],\"tariff_id\":\"TARIFF-DYN-SMV-satmat\",\"last_updated\":\"2026-10-02T08:37:34.475Z\"}],\"last_updated\":\"2026-10-02T08:37:34.475Z\"}]}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936435431-38o2is",
+      "timestamp": "2026-10-02T10:20:35.431Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GetLocations",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Dispatched",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "count": 1
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"count\":1}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936426664-tpaujy",
+      "timestamp": "2026-10-02T10:20:26.664Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/locations",
+      "machineId": "SMV (SMV Mobility Roaming eMSP)",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 2,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:26.664Z\",\"data\":[{\"country_code\":\"IN\",\"party_id\":\"SMT\",\"id\":\"satmat\",\"publish\":true,\"name\":\"ev1\",\"address\":\"SATMAT Tech Park, Viman Nagar\",\"city\":\"Pune\",\"postal_code\":\"411001\",\"country\":\"IND\",\"coordinates\":{\"latitude\":\"18.5204\",\"longitude\":\"73.8567\"},\"parking_type\":\"ON_STREET\",\"charging_when_closed\":true,\"operator\":{\"name\":\"SATMAT EV\",\"website\":\"https://evcharger.satmatgroup.com\"},\"last_updated\":\"2026-10-02T08:37:34.475Z\",\"evses\":[{\"uid\":\"satmat-EVSE-1\",\"evse_id\":\"IN*SMT*Esatmat*1\",\"status\":\"AVAILABLE\",\"status_schedule\":[],\"capabilities\":[\"REMOTE_START_STOP_CAPABLE\",\"RFID_READER\",\"CHARGING_PROFILE_CAPABLE\"],\"connectors\":[{\"id\":\"1\",\"standard\":\"IEC_62196_T2_COMBO\",\"format\":\"CABLE\",\"power_type\":\"DC\",\"max_voltage\":400,\"max_amperage\":150,\"max_electric_power\":60000,\"tariff_ids\":[\"TARIFF-DYN-SMV-satmat\"],\"tariff_id\":\"TARIFF-DYN-SMV-satmat\",\"last_updated\":\"2026-10-02T08:37:34.475Z\"}],\"last_updated\":\"2026-10-02T08:37:34.475Z\"}]}]}",
+      "details": {
+        "partnerId": "partner-smv-live",
+        "partyId": "SMV",
+        "countryCode": "IN",
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790936426663-6pefrk",
+      "timestamp": "2026-10-02T10:20:26.663Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GetLocations",
+      "machineId": "SATMAT-EV-001",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Dispatched",
+      "ip": "127.0.0.1",
+      "payload": {
+        "partner": "SMV Mobility Roaming eMSP",
+        "party_id": "SMV",
+        "count": 1
+      },
+      "rawMessage": "{\"partner\":\"SMV Mobility Roaming eMSP\",\"party_id\":\"SMV\",\"count\":1}",
+      "details": {}
+    },
+    {
+      "id": "log-1790936416228-wa1f92",
+      "timestamp": "2026-10-02T10:20:16.228Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/cpo/2.2/locations",
+      "machineId": "Roaming Partner",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "Error 2002",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":2002,\"status_message\":\"Invalid or unrecognized partner token\",\"timestamp\":\"2026-10-02T10:20:16.228Z\",\"data\":null}",
+      "details": {
+        "httpStatus": 401,
+        "ocpiStatusCode": 2002,
+        "message": "Invalid or unrecognized partner token"
+      }
+    },
+    {
+      "id": "log-1790936408365-1zkq94",
+      "timestamp": "2026-10-02T10:20:08.365Z",
+      "type": "OCPI",
+      "protocol": "OCPI 2.2",
+      "direction": "OUT",
+      "action": "GET /ocpi/versions",
+      "machineId": "Roaming Partner",
+      "connectorId": null,
+      "transactionId": null,
+      "status": "200 OK",
+      "durationMs": 1,
+      "ip": "127.0.0.1",
+      "payload": {},
+      "rawMessage": "{\"status_code\":1000,\"status_message\":\"Success\",\"timestamp\":\"2026-10-02T10:20:08.365Z\",\"data\":[{\"version\":\"2.2.1\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.2.1\"},{\"version\":\"2.2\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.2\"},{\"version\":\"2.0\",\"url\":\"https://ais-dev-cepnevtes7za5teqx3gsza-807854884366.asia-east1.run.app/ocpi/2.0\"}]}",
+      "details": {
+        "httpStatus": 200,
+        "ocpiStatusCode": 1000,
+        "message": "Success"
+      }
+    },
+    {
+      "id": "log-1790930254475-lrjxox",
+      "timestamp": "2026-10-02T08:37:34.475Z",
+      "type": "SYSTEM",
+      "protocol": "CSMS Core",
+      "direction": "OUT",
+      "action": "StopChargingDirect",
+      "machineId": "satmat",
+      "connectorId": 1,
+      "transactionId": 2001,
+      "status": "Completed",
+      "ip": "127.0.0.1",
+      "payload": {
+        "connectorId": 1,
+        "transactionId": 2001,
+        "socketConnected": false
+      },
+      "rawMessage": "{\"connectorId\":1,\"transactionId\":2001,\"socketConnected\":false}",
+      "details": {}
+    },
+    {
+      "id": "log-1790916626442-qq63",
+      "timestamp": "2026-10-02T04:50:26.442Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "Disconnected",
+      "payload": {}
+    },
+    {
+      "id": "log-1790916625930-e5xb",
+      "timestamp": "2026-10-02T04:50:25.930Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "CallResult",
+      "payload": {
+        "status": "Accepted"
+      }
+    },
+    {
+      "id": "log-1790916625928-1rah",
+      "timestamp": "2026-10-02T04:50:25.928Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "RemoteStopTransaction",
+      "payload": {
+        "transactionId": 2001
+      }
+    },
+    {
+      "id": "log-1790916625904-t36x",
+      "timestamp": "2026-10-02T04:50:25.904Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "StartTransactionResponse",
+      "payload": {
+        "transactionId": 2001,
+        "idTagInfo": {
+          "status": "Accepted"
+        }
+      }
+    },
+    {
+      "id": "log-1790916625902-fsf6",
+      "timestamp": "2026-10-02T04:50:25.902Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "StartTransaction",
+      "payload": {
+        "connectorId": 1,
+        "idTag": "SATMAT-ADMIN-CARD",
+        "meterStart": 5401718,
+        "timestamp": "2026-10-02T03:59:01.880Z"
+      }
+    },
+    {
+      "id": "log-1790916625897-i93c",
+      "timestamp": "2026-10-02T04:50:25.897Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "Connected",
+      "payload": {
+        "ip": "127.0.0.1",
+        "url": "/ocpp/satmat"
+      }
+    },
+    {
+      "id": "log-1790916351440-airy",
+      "timestamp": "2026-10-02T04:45:51.440Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "Disconnected",
+      "payload": {}
+    },
+    {
+      "id": "log-1790916351432-fq9k",
+      "timestamp": "2026-10-02T04:45:51.432Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "StopTransactionResponse",
+      "payload": {
+        "idTagInfo": {
+          "status": "Accepted"
+        }
+      }
+    },
+    {
+      "id": "log-1790916351431-y8rb",
+      "timestamp": "2026-10-02T04:45:51.431Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "StopTransaction",
+      "payload": {
+        "transactionId": 4224,
+        "meterStop": 5401820,
+        "timestamp": "2026-10-02T04:45:51.430Z",
+        "reason": "Remote"
+      }
+    },
+    {
+      "id": "log-1790916351229-7sqe",
+      "timestamp": "2026-10-02T04:45:51.229Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "CallResult",
+      "payload": {
+        "status": "Accepted"
+      }
+    },
+    {
+      "id": "log-1790916351226-d1f6",
+      "timestamp": "2026-10-02T04:45:51.226Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "RemoteStopTransaction",
+      "payload": {
+        "transactionId": 4224
+      }
+    },
+    {
+      "id": "log-1790916350919-5m2k",
+      "timestamp": "2026-10-02T04:45:50.919Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "StartTransactionResponse",
+      "payload": {
+        "transactionId": 4224,
+        "idTagInfo": {
+          "status": "Accepted"
+        }
+      }
+    },
+    {
+      "id": "log-1790916350918-dv2r",
+      "timestamp": "2026-10-02T04:45:50.918Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "StartTransaction",
+      "payload": {
+        "connectorId": 1,
+        "idTag": "RFID-APP-01",
+        "meterStart": 5401718,
+        "timestamp": "2026-10-02T04:45:50.916Z"
+      }
+    },
+    {
+      "id": "log-1790916350716-ywad",
+      "timestamp": "2026-10-02T04:45:50.716Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "CallResult",
+      "payload": {
+        "status": "Accepted"
+      }
+    },
+    {
+      "id": "log-1790916350711-5two",
+      "timestamp": "2026-10-02T04:45:50.711Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "OUT",
+      "action": "RemoteStartTransaction",
+      "payload": {
+        "connectorId": 1,
+        "idTag": "RFID-APP-01"
+      }
+    },
+    {
+      "id": "log-1790916350622-m94m",
+      "timestamp": "2026-10-02T04:45:50.622Z",
+      "type": "OCPP",
+      "machineId": "satmat",
+      "direction": "IN",
+      "action": "Connected",
+      "payload": {
+        "ip": "127.0.0.1",
+        "url": "/ocpp/satmat"
+      }
+    }
+  ]
+}
